@@ -1,0 +1,78 @@
+/**
+Theme Name: Dairy Arts Center
+Author: Nini Coleman
+Author URI: https://phatpencil.com
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dairy-arts-center
+Template: astra
+*/
+.uael-post__datebox span {
+    display: none;
+}
+.uael-post__datebox {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    -webkit-border-radius: 100%;
+    border-radius: 0%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.5;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.single .post-navigation a {
+    margin: 2px;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    display: none;
+}
+.type-tribe_events .tribe-events--is-past-event {
+    display: none !important;
+}
+/**
+ * From https://gist.github.com/cliffordp/cc30fba3242c495a26bd/
+ * 
+ * Hide past events on The Events Calendar's Month View
+ * 
+ * Without this snippet: http://cl.ly/3x2o3N2K3z1r
+ * With this snippet: http://cl.ly/0H431E2L0i17
+ * 
+ */
+
+.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a,
+.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore a,
+.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore {
+	display: none;
+}
+
+.events-archive.events-gridview #tribe-events-content table.tribe-events-calendar td.tribe-events-past .type-tribe_events {
+	border: none;
+	box-shadow: none;
+}
+.posted-on {
+	display: none;
+}
+/*.tribe-events-nav-pagination {
+	display: none;
+}*/
+.tribe-recurring-event-time {
+	display: none;
+}
+.tribe-events-start-time-label {
+	display:none;
+}
+.ast-article-post .ast-date-meta .posted-on, .ast-article-post .ast-date-meta .posted-on * {
+    background: #dd3333;
+    color: #ffffff;
+    display: none;
+}
